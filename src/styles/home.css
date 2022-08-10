@@ -1,0 +1,203 @@
+
+/* umumiy katta div */
+.home_page{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    /* grid-template-columns: repeat(auto-fill,minmax(33%,1fr)); */
+}
+
+
+
+
+
+/* left side bar */
+.left_bar{
+    min-height: 100vh;
+    display: flex;
+    justify-content: right;
+}
+
+.bar_side{
+    background: rgb(255, 255, 255);
+    width: 70%;
+    position: sticky;
+    padding: 10px;   
+    border-right: 1px solid rgba(154, 152, 152, 0.333);
+}
+.bar_side div{
+    padding-top: 10px;
+}
+
+/* bar_side_home_icon */
+/* icon_bar_side */
+.icon_bar_side{
+    display: flex;
+    justify-content: left;
+}
+.icon_bar_side{
+    padding-bottom: 5px;
+}
+.icon_bar_side img{
+    width: 50px;
+    /* height: 25px; */
+}
+
+/* home_icon_bar */
+.bar_side_home{
+    min-height: 7vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+/* btn_left_bar */
+.field_btn{
+    width: 100%;
+    padding-right:  50px;
+}
+.btn_left_bar{
+    width: 100%;
+    padding: 0px 10px;
+    height: 8vh;
+    border-radius: 25px;
+    background: #1D9BF0;
+    color: #ffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+/* center content */
+.center_navbar{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+
+    padding: 2px 5px;
+}
+.center_content{
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+/* collection child to hide but use scrolling */
+#collection{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box; /* So the width will be 100% + 17px */
+}
+/* iconcalar reactions */
+.content_reaction{
+    border-top: 0.5px solid rgba(156, 153, 153, 0.333);
+    margin-top: 15px;
+    width: 100% ;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+ 
+} 
+.content_reaction_field{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}  
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+
+
+
+/* right_bar info */
+.right_bar{
+    display: flex;
+    justify-content: left;
+}
+.right_bar_info{
+    width: 80%;
+    background: #ffff;
+    border-left: .5px solid rgba(162, 159, 159, 0.637);
+}
+
+/* right_input */
+.right_input{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background: #EFF3F4;
+    border: 1px solid rgb(171, 163, 163);
+    border-radius: 25px;
+    text-indent: 20px;
+}
+#right_input_input{
+   border: none;
+   width: 90%;
+}
+#right_input_input:focus{
+    border-bottom: 1px solid #EFF3F4;;
+    -webkit-box-shadow: 0 1px 0 0 #ffffff;
+    -moz-box-shadow: 0 1px 0 0 #ffffff;
+    box-shadow: 0 1px 0 0 #EFF3F4;;
+}
+#right_input_input:active{
+   border: none;
+}
+
+/* .right_input_text */
+.right_input_text_parent{
+    padding: 10px;
+}
+.right_input_text{
+    padding: 10px;
+    background: #EFF3F4;
+    border-radius:25px;
+}
+/* right_follow_field */
+.right_follow{
+    padding: 10px;
+}
+.right_follow_field{
+    padding: 10px;
+    background: #EFF3F4;
+    border-radius:25px;
+}
+
+
+/* publish__modal */
+.publish__modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+}
+.create__post{
+    position: relative;
+    width: 70%;
+    height: 60%;
+    background: #fff;
+    margin: 60px auto;
+    padding: 30px;
+}
+.field_text{
+   height:100%;
+   position: relative;
+}
+.field_text input{
+    position: absolute;
+    left: 1rem;
+    bottom: 3rem;
+}
+.btn_creator{
+    position: absolute;
+    right: -1rem;
+    bottom: 3.7rem;
+}
